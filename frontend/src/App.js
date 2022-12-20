@@ -11,6 +11,7 @@ import NewReview from "./pages/NewReview";
 import EditReview from "./pages/EditReview";
 
 import NotFound from "./pages/NotFound";
+import ConvertCrypto from "./pages/ConvertCrypto";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/review/:id" element={<Review />}></Route>
         <Route path="/review/new" element={<NewReview />}></Route>
         <Route path="/review/edit/:id" element={<EditReview />}></Route>
+        <Route path="/convert/crypto" element={<ConvertCrypto />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </>
